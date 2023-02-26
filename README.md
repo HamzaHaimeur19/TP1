@@ -38,6 +38,12 @@
 <p>Presentation 3 XML </p>
 <img src="images/Presentation3XML.png">
 
+<p>Component annotation</p>
+<img src="images/Component.png">
+
+<p>Autowired annotation</p>
+<img src="images/Autowired.png">
+
 <p>Presentation 3 Annotation </p>
 <img src="images/Annotation.png">
 
