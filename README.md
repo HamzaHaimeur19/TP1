@@ -1,7 +1,7 @@
 <h1>Rapport TP1</h1>
 
 <p>Architecture</p>
-<img src="images/img.png">
+<img src="images/arch.png">
 
 <p>Interface DAO</p>
 <img src = "images/InterfaceDAO.png">
