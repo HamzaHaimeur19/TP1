@@ -29,6 +29,25 @@
 <img src="images/ConfigV2.png">
 <img src="images/ImplDaoV2WS.png">
 
+<p>pom.xml avec depedances spring-context, spring-beans, spring-core</p>
+<img src="images/pomxml.png">
+
+<p>context d'application XML </p>
+<img src="images/appContext.png">
+
+<p>Presentation 3 XML </p>
+<img src="images/Presentation3XML.png">
+
+<p>Presentation 3 Annotation </p>
+<img src="images/Annotation.png">
+
+
+
+
+
+
+
+
 
 
 
