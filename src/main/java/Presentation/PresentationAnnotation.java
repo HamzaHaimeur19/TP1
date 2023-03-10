@@ -1,17 +1,17 @@
 package Presentation;
 
-import Metier.IMetier;
+import metier.InterfaceMetier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Presentation3Annotaion {
+public class PresentationAnnotation {
 
     public static void main(String[] args) {
 
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext("Dao", "Metier");
+        ApplicationContext context = new AnnotationConfigApplicationContext("metier", "dao");
         //scanner les packages Dao et Metier
 
-        IMetier metier = applicationContext.getBean(IMetier.class);
+        InterfaceMetier metier = context.getBean(InterfaceMetier.class);
 
         System.out.println(metier.calculer());
 

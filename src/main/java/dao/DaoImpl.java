@@ -1,10 +1,9 @@
-package Dao;
+package dao;
 
 import org.springframework.stereotype.Component;
 
-@Component //version annotation de spring
+@Component
 public class DaoImpl implements IDao {
-
 
     @Override
     public double getValue() {

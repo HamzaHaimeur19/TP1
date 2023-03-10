@@ -1,7 +1,7 @@
 package Presentation;
 
-import Dao.IDao;
-import Metier.IMetier;
+import dao.IDao;
+import metier.InterfaceMetier;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -19,7 +19,7 @@ public class Presentation2 {
 
             String metierClassName = scanner.next(); // lire la ligne content la classe MetierImpl
             Class cMetier = Class.forName(metierClassName);
-            IMetier metier = (IMetier) cMetier.newInstance(); // instancier objet metier equivalent de IMetier metier = new IMetier();
+            InterfaceMetier metier = (InterfaceMetier) cMetier.newInstance(); // instancier objet metier equivalent de IMetier metier = new IMetier();
 
             Method method = cMetier.getMethod("setDao", IDao.class); // methode setDao de la classe IDao dans la classe cMetier
 
