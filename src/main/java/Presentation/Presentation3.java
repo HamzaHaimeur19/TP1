@@ -8,10 +8,9 @@ public class Presentation3 {
 
     public static void main(String[] args) {
         //version xml
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("metier", "dao");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         InterfaceMetier metier = applicationContext.getBean(InterfaceMetier.class);
 
         System.out.println(metier.calculer());
-
     }
 }

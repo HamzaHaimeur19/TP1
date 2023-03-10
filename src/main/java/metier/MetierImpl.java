@@ -2,6 +2,7 @@ package metier;
 
 import dao.IDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 
@@ -12,12 +13,16 @@ public class MetierImpl implements InterfaceMetier {
     // couplage faible (entre classe MetierImpl et DaoImpl via l'interface IDao)
     // injection de dependances via Autowired
 
-    private final IDao dao;
-
     @Autowired
+    @Qualifier("dao2")
+    private IDao dao;
+
+
+/*
     public MetierImpl(IDao dao) {
+
         this.dao = dao;
-    }
+    }*/
 
     @Override
     public double calculer() {
@@ -30,7 +35,7 @@ public class MetierImpl implements InterfaceMetier {
     }
 
     //setter pour initialiser l'object dao
-   /* public void setDao(IDao dao) {
+   /*public void setDao(IDao dao) {
         this.dao = dao;
     }*/
 }
